@@ -1,0 +1,106 @@
+#contact-body {
+
+    font-size: 30px;
+    color: black;
+
+}
+#contact-stuff {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: red;
+    width: 390px;
+    border: 5px black dotted;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+
+#contact-body {
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+	60% {
+		-webkit-transform: translateY(-7px);
+		-ms-transform:     translateY(-7px);
+		transform:         translateY(-7px)
+	}
+}
+.contact-icons {  
+    -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contact-icons:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.contact-link {
+    font-size: 90px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+}
+
+
+#actual-form {
+    margin-top: 30px;
+}
+
+#contact-label {
+    color: white;
+    border: 2px red solid;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: red;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+#resume-label {
+    border: 2px red solid;
+    border-radius: 15px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 30px;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#resume-stuff {
+    margin: auto;
+    border: 5px black dotted;
+    width: 150px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Andy Nguyen's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/info.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Poiret+One|Press+Start+2P|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  
+
+
+</head>
+
+<body>
+  <div id="contact-container" class="container">
+      <div id="navigation">
+          <div id="navigation-logo">
+            <a href="index.html">Andy Nguyen's Contact Info</a>
+          </div>
+          <div class="navigation-menu">
+                <a class='hvr-sweep-to-right' href="info.html" id="info-a">INFO</a>
+                  <a class='hvr-sweep-to-right' href="projects.html" id="projects-a">PROJECTS</a>
+                  <a class='hvr-sweep-to-right' href= "contact.html" id="contact-a">CONTACT</a> 
+              </div>
+              
+         
+        </div>
+    <div id="contact-body">
+        <div id="contact-form">
+          
+            <div id="contact-label">Contact Links</div> 
+            <div id="contact-stuff">
+                    <div class="contact-icons"><a class="contact-link" target="_blank" href="https://www.linkedin.com/in/le-andrew-nguyen/"><i class="fab fa-linkedin"></i></a></div>
+                    <div class="contact-icons"><a class="contact-link" target="_blank" href="https://github.com/weboshi"><i class="fab fa-github"></i></a></div>
+                    <div class="contact-icons"><a class="contact-link" target="_blank" alt="avident@gmail.com" href="mailto:avident@gmail.com?Subject=Hello"><i class="fas fa-envelope"></i></a></div>   
+            </div> 
+            <div id="resume">
+                <div id="resume-label">Resume</div>
+                <div id="resume-stuff">
+                <div class="contact-icons"><a class="contact-link" target="_blank" alt="Andy Nguyen's Resume" href="https://docs.google.com/document/d/16Pmr7mJfV7YC4RGJ9jEFrV9KfI9ab6YK1itJdjSjNBc/edit?usp=sharing"><i class="far fa-file"></i>
+                </div>
+                </a></div>
+            </div>   
+        </div>
+    </div>
+  
+  </div>
+
+</body>
+<script>
+
+//active nav bar 
+$(function() {
+        var pgurl = window.location.href.substr(window.location.href
+   .lastIndexOf("/")+1);
+        $(".navigation-menu a").each(function(){
+             if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+             $(this).addClass("active");
+        })
+   });
+   
+//form js
+
+
+
+
+</script>
+
+</html>

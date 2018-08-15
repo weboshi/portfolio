@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Andy Nguyen's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/info.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/projects.css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Poiret+One|Press+Start+2P|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+  <div id="projects-container" class="container">
+      <div id="navigation">
+          <div id="navigation-logo">
+            <a href="index.html">Andy Nguyen's Projects</a>
+          </div>
+          <div class="navigation-menu">
+                <a class='hvr-sweep-to-right' href="info.html" id="info-a">INFO</a>
+                  <a class='hvr-sweep-to-right' href="projects.html" id="projects-a">PROJECTS</a>
+                  <a class='hvr-sweep-to-right' href= "contact.html" id="contact-a">CONTACT</a> 
+              </div>
+        </div>
+    <div id="projects-body">
+            <div class="tab">
+                    <button class="tablinks active" onclick="openCity(event, 'PolitSearch')">PolitSearch</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo Music Search')">Tokyo Music Search</button>
+                    <button class="tablinks" onclick="openCity(event, 'TechCheck')">TechCheck</button>
+                    <button class="tablinks" onclick="openCity(event, 'moochify')">Moochify</button>
+                    <button class="tablinks" onclick="openCity(event, 'JCON')">JCON</button>
+
+                  </div>
+                  
+                  <div id="PolitSearch" class="tabcontent" style="display:block">
+                    <div class="tabcontentbody">
+                    <div class="p-title"><h3 class="project-title">PolitSearch</h3></div> <a target="_blank" href="https://politsearch.herokuapp.com"><i style="font-size: 24px" class="fa fa-external-link"></i></a>
+
+                    <p class="project-detail">React / Google Civics API / ProPublica API / OpenSecrets API</p>
+
+                    <p class="p-description">A react app that lets users enter their address to find their representatives. Returns representatives' political affiliation, office and social media. For federal level representatives, users can also see how much campaign funds they received in their last election.  </p>
+                    <div class="row">
+                        <div class="column">
+                          <img src="./assets/images/ps.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                          <img src="./assets/images/ps2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                          <img src="./assets/images/ps3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="./assets/images/ps4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                          </div>
+                
+                    </div>
+                    
+                    </div>
+                  </div>
+                  
+                  <div id="Tokyo Music Search" class="tabcontent">
+                    <div class="tabcontentbody">
+                        <div class="p-title"><h3 class="project-title">Tokyo Music Search</h3></div> <a target="_blank"  href="https://tokyomusicsearch.herokuapp.com/"><i style="font-size: 24px" class="fa fa-external-link"></i></a>
+                    <p class="project-detail">React / Cheerio</p>
+                    <p class="p-description">A react app that lets users search Tokyo's most popular music venues for artists that are performing. The search utilizes Cheerio to do a live scrape of the venue's schedules, ensuring that performance info is up to date. If an artist is performing, the month and schedule link are returned to the user. </p> 
+                    <div class="row">
+                        <div class="column">
+                          <img src="./assets/images/tms.png" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                          <img src="./assets/images/tms2.png" onclick="openModal2();currentSlide2(2)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                          <img src="./assets/images/tms3.png" onclick="openModal2();currentSlide2(3)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="./assets/images/tms4.png" onclick="openModal2();currentSlide2(3)" class="hover-shadow">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div id="TechCheck" class="tabcontent">
+                    <div class="tabcontentbody">
+                        <div class="p-title"><h3 class="project-title">TechCheck</h3></div><a target="_blank"  href="https://techcheck.herokuapp.com/"><i style="font-size: 24px" class="fa fa-external-link"></i></a>
+            
+                      <p class="project-detail">React / Role: Front End / AWS / Logo</p>
+                      <p class="p-description">A commerce site that serves as a marketplace for used electronic hardware, PC components and accessories. Users can register and post listings and purchase items. Users can search the database for listings and can organize by category.</p>
+                      <div class="row">
+                          <div class="column">
+                            <img src="./assets/images/tc.png" onclick="openModal3();currentSlide3(1)" class="hover-shadow">
+                          </div>
+                          <div class="column">
+                            <img src="./assets/images/tc2.png" onclick="openModal3();currentSlide3(2)" class="hover-shadow">
+                          </div>
+                          <div class="column">
+                            <img src="./assets/images/tc3.png" onclick="openModal3();currentSlide3(3)" class="hover-shadow">
+                          </div>
+                          <div class="column">
+                              <img src="./assets/images/tc4.png" onclick="openModal3();currentSlide3(3)" class="hover-shadow">
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div id="moochify" class="tabcontent">
+                      <div class="tabcontentbody">
+                          <div class="p-title"><h3 class="project-title">Moochify</h3></div><a target="_blank"  href="https://moochify.herokuapp.com"><i style="font-size: 24px" class="fa fa-external-link"></i></a>
+                        <p class="project-detail">Role: Front End</p>
+                          <p class="p-description">A marketplace website that connects owners and renters. Allows owners to list their items for rent, with condition, price and availability. Renters can search for items and connect with the buyer.</p>
+                        <div class="row">
+                            <div class="column">
+                              <img src="./assets/images/m.png" onclick="openModal4();currentSlide4(1)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                              <img src="./assets/images/m2.png" onclick="openModal4();currentSlide4(2)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                              <img src="./assets/images/m3.png" onclick="openModal4();currentSlide4(3)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                                <img src="./assets/images/m4.png" onclick="openModal4();currentSlide4(3)" class="hover-shadow">
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  <div id="JCON" class="tabcontent">
+                    <div class="tabcontentbody">
+                        <div class="p-title"><h3 class="project-title">JCON</h3></div><a target="_blank"  href="https://jcon.herokuapp.com"><i style="font-size: 24px" class="fa fa-external-link"></i></a>
+                      <p class="project-detail">React</p>
+                        <p class="p-description">A site built to showcase a fictional convention centered on Japanese pop culture. Shows design, css effects and layout.</p>
+                      <div class="row">
+                          <div class="column">
+                            <img src="./assets/images/tms.png" onclick="openModal4();currentSlide4(1)" class="hover-shadow">
+                          </div>
+                          <div class="column">
+                            <img src="./assets/images/tms2.png" onclick="openModal4();currentSlide4(2)" class="hover-shadow">
+                          </div>
+                          <div class="column">
+                            <img src="./assets/images/tms3.png" onclick="openModal4();currentSlide4(3)" class="hover-shadow">
+                          </div>
+                          <div class="column">
+                              <img src="./assets/images/tms4.png" onclick="openModal4();currentSlide4(3)" class="hover-shadow">
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+          
+    </div>
+  
+  </div>
+
+  <!-- ps modal -->
+  <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./assets/images/ps.png" style="width:70%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./assets/images/ps2.png" style="width:70%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./assets/images/ps3.png" style="width:70%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="./assets/images/ps4.png" style="width:70%">
+      </div>
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="./assets/images/ps.png" onclick="currentSlide(1)" alt="Homepage">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./assets/images/ps2.png" onclick="currentSlide(2)" alt="Results">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./assets/images/ps3.png" onclick="currentSlide(3)" alt="About">
+    </div>
+
+    <div class="column">
+        <img class="demo" src="./assets/images/ps4.png" onclick="currentSlide(4)" alt="No Match">
+      </div>
+
+  </div>
+</div>
+
+<!-- tms modal -->
+
+<div id="myModal2" class="modal">
+    <span class="close cursor" onclick="closeModal2()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides2">
+        <div class="numbertext">1 / 4</div>
+        <img src="./assets/images/tms.png" style="width:70%">
+      </div>
+  
+      <div class="mySlides2">
+        <div class="numbertext">2 / 4</div>
+        <img src="./assets/images/tms2.png" style="width:70%">
+      </div>
+  
+      <div class="mySlides2">
+        <div class="numbertext">3 / 4</div>
+        <img src="./assets/images/tms3.png" style="width:70%">
+      </div>
+      <div class="mySlides2">
+          <div class="numbertext">4 / 4</div>
+          <img src="./assets/images/tms4.png" style="width:70%">
+        </div>
+  
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo2" src="./assets/images/tms.png" onclick="currentSlide2(1)" alt="Homepage">
+      </div>
+  
+      <div class="column">
+        <img class="demo2" src="./assets/images/tms2.png" onclick="currentSlide2(2)" alt="Results">
+      </div>
+  
+      <div class="column">
+        <img class="demo2" src="./assets/images/tms3.png" onclick="currentSlide2(3)" alt="About">
+      </div>
+  
+      <div class="column">
+          <img class="demo2" src="./assets/images/tms4.png" onclick="currentSlide2(4)" alt="No Match">
+        </div>
+  
+    </div>
+  </div>
+
+  <!-- tc modal -->
+
+  <div id="myModal3" class="modal">
+      <span class="close cursor" onclick="closeModal3()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides3">
+          <div class="numbertext">1 / 4</div>
+          <img src="./assets/images/tc.png" style="width:70%">
+        </div>
+    
+        <div class="mySlides3">
+          <div class="numbertext">2 / 4</div>
+          <img src="./assets/images/tc2.png" style="width:70%">
+        </div>
+    
+        <div class="mySlides3">
+          <div class="numbertext">3 / 4</div>
+          <img src="./assets/images/tc3.png" style="width:70%">
+        </div>
+        <div class="mySlides3">
+            <div class="numbertext">4 / 4</div>
+            <img src="./assets/images/tc4.png" style="width:70%">
+          </div>
+    
+    
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+    
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo3" src="./assets/images/tc.png" onclick="currentSlide3(1)" alt="Homepage">
+        </div>
+    
+        <div class="column">
+          <img class="demo3" src="./assets/images/tc2.png" onclick="currentSlide3(2)" alt="Results">
+        </div>
+    
+        <div class="column">
+          <img class="demo3" src="./assets/images/tc3.png" onclick="currentSlide3(3)" alt="About">
+        </div>
+    
+        <div class="column">
+            <img class="demo3" src="./assets/images/tc4.png" onclick="currentSlide3(4)" alt="No Match">
+          </div>
+    
+      </div>
+    </div>
+
+      <!-- moochify modal -->
+
+  <div id="myModal5" class="modal">
+      <span class="close cursor" onclick="closeModal5()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides5">
+          <div class="numbertext">1 / 4</div>
+          <img src="./assets/images/m.png" style="width:70%">
+        </div>
+    
+        <div class="mySlides5">
+          <div class="numbertext">2 / 4</div>
+          <img src="./assets/images/m2.png" style="width:70%">
+        </div>
+    
+        <div class="mySlides5">
+          <div class="numbertext">3 / 4</div>
+          <img src="./assets/images/m3.png" style="width:70%">
+        </div>
+        <div class="mySlides5">
+            <div class="numbertext">4 / 4</div>
+            <img src="./assets/images/m4.png" style="width:70%">
+          </div>
+    
+    
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+    
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo5" src="./assets/images/m.png" onclick="currentSlide5(1)" alt="Homepage">
+        </div>
+    
+        <div class="column">
+          <img class="demo5" src="./assets/images/m2.png" onclick="currentSlide5(2)" alt="Results">
+        </div>
+    
+        <div class="column">
+          <img class="demo5" src="./assets/images/m3.png" onclick="currentSlide5(3)" alt="About">
+        </div>
+    
+        <div class="column">
+            <img class="demo5" src="./assets/images/m4.png" onclick="currentSlide5(4)" alt="No Match">
+          </div>
+    
+      </div>
+    </div>
+
+  <script>
+    $(function() {
+     var pgurl = window.location.href.substr(window.location.href
+.lastIndexOf("/")+1);
+     $(".navigation-menu a").each(function(){
+          if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+          $(this).addClass("active");
+     })
+     console.log(pgurl)
+});
+    // tabs
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        console.log(tabcontent)
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    //modal js ps
+    function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+// modal gallery for tms
+
+ function openModal2() {
+  document.getElementById('myModal2').style.display = "block";
+}
+
+function closeModal2() {
+  document.getElementById('myModal2').style.display = "none";
+}
+
+var slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides2 = document.getElementsByClassName("mySlides2");
+  var dots2 = document.getElementsByClassName("demo2");
+  var captionText2 = document.getElementById("caption2");
+  if (n > slides2.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides2.length}
+  for (i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";
+  }
+  for (i = 0; i < dots2.length; i++) {
+      dots2[i].className = dots2[i].className.replace(" active", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";
+  dots2[slideIndex2-1].className += " active";
+  captionText.innerHTML = dots2[slideIndex2-1].alt;
+}
+
+//techcheck modal
+
+ function openModal3() {
+  document.getElementById('myModal3').style.display = "block";
+}
+
+function closeModal3() {
+  document.getElementById('myModal3').style.display = "none";
+}
+
+var slideIndex3 = 1;
+showSlides3(slideIndex3);
+
+function plusSlides3(n) {
+  showSlides3(slideIndex3 += n);
+}
+
+function currentSlide3(n) {
+  showSlides3(slideIndex3 = n);
+}
+
+function showSlides3(n) {
+  var i;
+  var slides3 = document.getElementsByClassName("mySlides3");
+  var dots3 = document.getElementsByClassName("demo3");
+  var captionText = document.getElementById("caption3");
+  if (n > slides3.length) {slideIndex3 = 1}
+  if (n < 1) {slideIndex3 = slides3.length}
+  for (i = 0; i < slides3.length; i++) {
+      slides3[i].style.display = "none";
+  }
+  for (i = 0; i < dots3.length; i++) {
+      dots3[i].className = dots3[i].className.replace(" active", "");
+  }
+  slides3[slideIndex3-1].style.display = "block";
+  dots3[slideIndex3-1].className += " active";
+  captionText.innerHTML = dots3[slideIndex3-1].alt;
+}
+
+// jcon 
+
+ function openModal4() {
+  document.getElementById('myModal4').style.display = "block";
+}
+
+function closeModal4() {
+  document.getElementById('myModal4').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides4(slideIndex4);
+
+function plusSlides4(n) {
+  showSlides4(slideIndex4 += n);
+}
+
+function currentSlide4(n) {
+  showSlides4(slideIndex = n);
+}
+
+function showSlides4(n) {
+  var i;
+  var slides4 = document.getElementsByClassName("mySlides4");
+  var dots4 = document.getElementsByClassName("demo4");
+  var captionText4 = document.getElementById("caption4");
+  if (n > slides4.length) {slideIndex4 = 1}
+  if (n < 1) {slideIndex4 = slides4.length}
+  for (i = 0; i < slides4.length; i++) {
+      slides4[i].style.display = "none";
+  }
+  for (i = 0; i < dots4.length; i++) {
+      dots4[i].className = dots4[i].className.replace(" active", "");
+  }
+  slides4[slideIndex4-1].style.display = "block";
+  dots4[slideIndex4-1].className += " active";
+  captionText.innerHTML = dots4[slideIndex4-1].alt;
+}
+
+// moochify
+
+ function openModal5() {
+  document.getElementById('myModal5').style.display = "block";
+}
+
+function closeModal5() {
+  document.getElementById('myModal5').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides4(slideIndex4);
+
+function plusSlides5(n) {
+  showSlides5(slideIndex5 += n);
+}
+
+function currentSlide5(n) {
+  showSlides5(slideIndex = n);
+}
+
+function showSlides5(n) {
+  var i;
+  var slides5 = document.getElementsByClassName("mySlides5");
+  var dots5 = document.getElementsByClassName("demo5");
+  var captionText5 = document.getElementById("caption5");
+  if (n > slides5.length) {slideIndex5 = 1}
+  if (n < 1) {slideIndex5 = slides5.length}
+  for (i = 0; i < slides5.length; i++) {
+      slides5[i].style.display = "none";
+  }
+  for (i = 0; i < dots5.length; i++) {
+      dots5[i].className = dots5[i].className.replace(" active", "");
+  }
+  slides5[slideIndex5-1].style.display = "block";
+  dots5[slideIndex5-1].className += " active";
+  captionText.innerHTML = dots5[slideIndex5-1].alt;
+}
+
+
+
+    </script>
+
+</body>
+</html>
